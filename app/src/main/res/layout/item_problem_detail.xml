@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TestTypeTextView"
+        android:text="@string/random_question"
+        android:textColor="@color/colorAccent"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/radio_option1"
+            style="@style/MyRadioButton"/>
+
+        <RadioButton android:id="@+id/radio_option2"
+            android:text="@string/random_question"
+            style="@style/MyRadioButton"/>
+
+        <RadioButton android:id="@+id/radio_option3"
+            style="@style/MyRadioButton"/>
+
+        <RadioButton android:id="@+id/radio_option4"
+            style="@style/MyRadioButton"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

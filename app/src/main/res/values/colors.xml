@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#128c7e</color>
+    <color name="colorPrimaryDark">#075e54</color>
+
+    <color name="wACheckMarkBlue">#34b7f1</color>
+    <color name="wAChatBackground">#ece5dd</color>
+
+    <color name="colorAccent">#25d366</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="summary_card_layer">#5C6BC0</color>
+
+    <color name="card_bg1">#7fcff6</color>
+    <color name="card_bg2">#b26a72</color>
+    <color name="card_bg3">#3a3f92</color>
+    <color name="card_bg4">#d5b5aa</color>
+    <color name="card_bg5">#6c8c8c</color>
+    <color name="card_bg6">#04361e</color>
+    <color name="card_bg7">#ccd7e7</color>
+    <color name="card_bg8">#7b7b7b</color>
+    <color name="card_bg9">#bfd5da</color>
+    <color name="card_bg10">#ad040b</color>
+    <color name="question_back">#BBDEFB</color>
+</resources>
