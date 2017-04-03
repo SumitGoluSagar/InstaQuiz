@@ -1,8 +1,7 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.adapter;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.os.Build;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.mistu.android.exam.R;
 import org.mistu.android.exam.db.ExamDbContract;
+import org.mistu.android.exam.fragment.SummaryListFragment;
 
 /**
  * Created by kedee on 25/3/17.

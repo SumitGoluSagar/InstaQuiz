@@ -1,12 +1,10 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Html;
-import android.text.Spannable;
 import android.text.Spanned;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,9 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.w3c.dom.Text;
+import org.mistu.android.exam.model.Problem;
+import org.mistu.android.exam.R;
 
 
 public class ProblemFragment extends Fragment

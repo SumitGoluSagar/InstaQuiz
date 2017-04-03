@@ -1,4 +1,4 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.model;
 
 import java.io.Serializable;
 

@@ -1,7 +1,6 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,6 +17,10 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.json.JSONArray;
+import org.mistu.android.exam.App;
+import org.mistu.android.exam.model.Problem;
+import org.mistu.android.exam.adapter.ProblemListAdapter;
+import org.mistu.android.exam.R;
 
 import java.io.IOException;
 import java.util.ArrayList;

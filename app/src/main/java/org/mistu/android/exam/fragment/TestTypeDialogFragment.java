@@ -1,14 +1,15 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import org.mistu.android.exam.AppConstants;
+import org.mistu.android.exam.R;
 
 
 public class TestTypeDialogFragment extends DialogFragment implements View.OnClickListener{

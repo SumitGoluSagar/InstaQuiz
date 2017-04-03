@@ -1,4 +1,4 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.activity;
 
 import android.app.ProgressDialog;
 import android.content.ContentValues;
@@ -23,7 +23,6 @@ import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkError;
-import com.android.volley.NoConnectionError;
 import com.android.volley.ParseError;
 import com.android.volley.Response;
 import com.android.volley.ServerError;
@@ -34,22 +33,27 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.json.JSONArray;
-import org.json.JSONException;
+import org.mistu.android.exam.App;
+import org.mistu.android.exam.AppConstants;
+import org.mistu.android.exam.model.Pair;
+import org.mistu.android.exam.model.Problem;
+import org.mistu.android.exam.fragment.ProblemFragment;
+import org.mistu.android.exam.R;
 import org.mistu.android.exam.db.DbUtils;
 import org.mistu.android.exam.db.ExamDbContract;
 import org.mistu.android.exam.db.ExamsDbHelper;
+import org.mistu.android.exam.fragment.AlertDialogFragment;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 public class QuizActivity extends AppCompatActivity
-    implements ProblemFragment.OnProblemFragmentInteractionListener{
+    implements ProblemFragment.OnProblemFragmentInteractionListener {
 
     private ViewPager viewPager;
     private PagerAdapter adapter;

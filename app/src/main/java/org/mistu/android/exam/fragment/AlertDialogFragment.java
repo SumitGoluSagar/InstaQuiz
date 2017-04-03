@@ -1,10 +1,13 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.fragment;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
+
+import org.mistu.android.exam.activity.QuizActivity;
+import org.mistu.android.exam.R;
 
 /**
  * Created by kedee on 25/3/17.

@@ -12,7 +12,7 @@
     card_view:cardElevation="4dp"
     card_view:cardBackgroundColor="#fafafa"
     card_view:cardCornerRadius="4dp"
-    tools:context="org.mistu.android.exam.ProblemFragment">
+    tools:context="org.mistu.android.exam.fragment.ProblemFragment">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"

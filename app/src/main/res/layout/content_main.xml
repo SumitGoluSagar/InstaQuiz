@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg20"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="org.mistu.android.exam.MainActivity"
+    tools:context="org.mistu.android.exam.activity.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <LinearLayout

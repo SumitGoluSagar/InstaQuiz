@@ -1,4 +1,4 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.fragment;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.mistu.android.exam.R;
+import org.mistu.android.exam.adapter.SummaryListAdapter;
 import org.mistu.android.exam.db.ExamDbContract;
 import org.mistu.android.exam.db.ExamsDbHelper;
 

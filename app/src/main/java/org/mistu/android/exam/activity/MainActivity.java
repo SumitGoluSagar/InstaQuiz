@@ -1,7 +1,6 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.activity;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -14,15 +13,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
+
+import org.mistu.android.exam.AppConstants;
+import org.mistu.android.exam.model.Problem;
+import org.mistu.android.exam.R;
+import org.mistu.android.exam.fragment.SummaryListFragment;
+import org.mistu.android.exam.fragment.TestTypeDialogFragment;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements TestTypeDialogFragment.OnTestTypeFragmentInteractionListener,
-                    SummaryListFragment.OnSummaryListFragmentInteractionListener{
+        SummaryListFragment.OnSummaryListFragmentInteractionListener {
 
     private List<Problem> problemList;
     private List<String> answerList;

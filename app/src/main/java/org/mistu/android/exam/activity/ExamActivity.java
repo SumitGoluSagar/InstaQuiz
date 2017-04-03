@@ -1,15 +1,14 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
-import static android.R.attr.configure;
+import org.mistu.android.exam.AppConstants;
+import org.mistu.android.exam.fragment.ProblemListFragment;
+import org.mistu.android.exam.R;
 
 public class ExamActivity extends AppCompatActivity
     implements ProblemListFragment.OnProblemListFragmentInteractionListener {

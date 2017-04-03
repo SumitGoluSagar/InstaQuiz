@@ -1,20 +1,16 @@
-package org.mistu.android.exam;
+package org.mistu.android.exam.activity;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,19 +27,21 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import org.mistu.android.exam.App;
+import org.mistu.android.exam.AppConstants;
+import org.mistu.android.exam.model.Pair;
+import org.mistu.android.exam.model.Problem;
+import org.mistu.android.exam.fragment.ProblemFragment;
+import org.mistu.android.exam.R;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class AnswersActivity extends AppCompatActivity
-    implements ProblemFragment.OnProblemFragmentInteractionListener{
+    implements ProblemFragment.OnProblemFragmentInteractionListener {
 
     private static final long DEFAULT_QUIZ_ID = -1L;
     private Toolbar toolbar;
