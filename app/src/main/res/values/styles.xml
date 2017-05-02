@@ -6,9 +6,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">serif</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LoginTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/loginBackground</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -28,6 +35,17 @@
         <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
+    <style name="InstructionTextView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
     <style name="MyRadioButton" parent="AppTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -41,6 +59,34 @@
         <item name="android:text">@string/random_option</item>
         <item name="android:onClick">onOptionButtonClicked</item>
         <item name="android:background">@drawable/option_rect</item>
+    </style>
+
+    <style name="MyEditText" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/bluish_unfilled_rectangle</item>
+    </style>
+
+    <style name="InfoTextView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">8dp</item>
+
+    </style>
+
+    <style name="MyTextView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
     </style>
 
 </resources>

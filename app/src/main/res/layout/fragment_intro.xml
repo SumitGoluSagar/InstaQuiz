@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/card_bg1"
+    android:id="@+id/frag_intro_container"
+    tools:context="org.mistu.android.exam.fragment.IntroFragment">
+
+    <ImageView
+        android:id="@+id/frag_intro_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/pdf_icon"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/frag_intro_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/random_question"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:padding="16dp"
+        android:layout_below="@+id/frag_intro_iv"
+        android:textColor="@color/white"
+        />
+
+
+
+</RelativeLayout>

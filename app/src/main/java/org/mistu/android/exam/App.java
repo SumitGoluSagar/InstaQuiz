@@ -1,18 +1,21 @@
 package org.mistu.android.exam;
 
 import android.app.Application;
+import android.support.multidex.MultiDexApplication;
 import android.text.TextUtils;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
+import static com.facebook.FacebookSdk.getApplicationContext;
+
 
 /**
  * Created by kedee on 4/1/17.
  */
 
-public class App extends Application {
+public class App extends MultiDexApplication {
 
     public static final String TAG = App.class
             .getSimpleName();

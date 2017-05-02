@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg20"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.mistu.android.exam.activity.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/home_ad_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/home_ad_dots_container"
+                android:layout_gravity="center|bottom"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_feed_rv"
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
+
+

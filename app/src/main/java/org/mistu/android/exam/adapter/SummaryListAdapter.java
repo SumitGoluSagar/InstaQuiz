@@ -2,6 +2,7 @@ package org.mistu.android.exam.adapter;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.os.Build;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -51,14 +52,24 @@ public class SummaryListAdapter extends RecyclerView.Adapter<SummaryListAdapter.
         String responseAnswerJsonString = cursor.getString(cursor.getColumnIndex(ExamDbContract.ExamsTaken.COLUMN_NAME_ANSWER_RESPONSE_MAP));
         long id = cursor.getLong(cursor.getColumnIndex(ExamDbContract.ExamsTaken._ID));
 
-        /*if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            holder.titleTV.setBackgroundColor(context.getResources().getColor(colors[position%10], null));
-        } else {
-            holder.titleTV.setBackgroundColor(context.getResources().getColor(colors[position%10]));
-        }*/
+        String type = title.split(" ")[0].trim();
+        if(type.equals("Instant")){
+            holder.titleTV.setBackgroundResource(R.drawable.orange_block_layer);
+            if (Build.VERSION.SDK_INT >= 23) {
+                holder.marksSeparatorLine.setBackgroundColor(context.getResources().getColor(R.color.colorAccent, null));
+            }
+            else {
+                holder.marksSeparatorLine.setBackgroundColor(context.getResources().getColor(R.color.colorAccent));
+            }
+
+        }
+        else if (type.equals("Custom")) {
+            holder.titleTV.setBackgroundResource(R.drawable.bluish_block_layer);
+        }
+
         holder.titleTV.setText(title);
 
-        String timeTaken = String.format("%02d:%02d", timeTakenInSec/60, timeTakenInSec%60);
+        String timeTaken = String.format("%02d" +"m : " +"%02d" + "s ", timeTakenInSec/60, timeTakenInSec%60);
 
         holder.totalQuestionTV.setText(String.valueOf(totalQuestionsCount));
         holder.correctQuestionTV.setText(String.valueOf(correctQuestionsCount));
@@ -105,6 +116,7 @@ public class SummaryListAdapter extends RecyclerView.Adapter<SummaryListAdapter.
         public View viewItem;
         public String responseAnswerJsonString;
         public String timeTaken;
+        public View marksSeparatorLine;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -117,6 +129,7 @@ public class SummaryListAdapter extends RecyclerView.Adapter<SummaryListAdapter.
             correctCountTV = (TextView) itemView.findViewById(R.id.correct_count);
             incorrectCountTV = (TextView) itemView.findViewById(R.id.incorrect_count);
             unansweredCountTV = (TextView) itemView.findViewById(R.id.unanswered_count);
+            marksSeparatorLine = itemView.findViewById(R.id.marks_separator_line);
 
             viewItem.setOnClickListener(this);
         }

@@ -7,7 +7,9 @@ package org.mistu.android.exam;
 public final class AppConstants {
     public static final String TEST_TYPE = "type";
     public static final String TEST_TYPE1 = "Instant Quiz";
+    public static final String QUIZ_TYPE_INSTANT = "Instant Quiz";
     public static final String TEST_TYPE2 = "Custom Quiz";
+    public static final String QUIZ_TYPE_CUSTOM = "Custom Quiz";
     public static final String TEST_TYPE3 = "Assignments";
     public static final String URL_TO_HIT = "urlToHit";
     public static final String RESULT = "result";
@@ -19,5 +21,5 @@ public final class AppConstants {
     public static final String ALL_QUESTIONS_URL = "http://mistu.org/etutor/api/getProblems.php";
     public static final String SUMMARY_URL = "http://mistu.org/etutor/api/getProblemsByIds.php";
     public static final String FULL_TEST_URL = "http://mistu.org/etutor/api/get25randomquestion.php";
-    public static final String CUSTOM_TEST_URL = "http://mistu.org/etutor/api/get5randProbRandChapter.php";
+    public static final String CUSTOM_QUIZ_URL = "http://mistu.org/etutor/api/get5randProbRandChapter.php";
 }

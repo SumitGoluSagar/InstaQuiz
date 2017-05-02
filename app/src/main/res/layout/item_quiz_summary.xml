@@ -39,7 +39,7 @@
 
             <TextView
                 android:id="@+id/item_quiz_summary_correct_questions"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:text="@string/app_name"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
                 android:id="@+id/item_quiz_summary_total_questions"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:text="@string/app_name"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_below="@+id/marks_separator_line"
@@ -87,8 +87,10 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_marginTop="124dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
             />
 
 
@@ -118,7 +120,7 @@
                     android:paddingEnd="4dp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_gravity="center"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorPrimaryDark"
                     />
 
                 <TextView
@@ -154,7 +156,7 @@
                     android:paddingEnd="4dp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_gravity="center"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorPrimaryDark"
                     />
 
                 <TextView
@@ -189,7 +191,7 @@
                     android:paddingEnd="4dp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_gravity="center"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorPrimaryDark"
                     />
 
                 <TextView

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intro_slider_info">
+        <item>This is slider 1</item>
+        <item>This is slider 2</item>
+        <item>This is slider 3</item>
+        <item>This is slider 4</item>
+    </string-array>
+
+    <integer-array name="intro_slider_images">
+        <item>@drawable/pdf_icon</item>
+        <item>@drawable/pdf_icon</item>
+        <item>@drawable/pdf_icon</item>
+        <item>@drawable/pdf_icon</item>
+    </integer-array>
+
+    <integer-array name="intro_slider_colors">
+        <item>@color/card_bg1</item>
+        <item>@color/card_bg1</item>
+        <item>@color/card_bg1</item>
+        <item>@color/card_bg1</item>
+    </integer-array>
+
+</resources>

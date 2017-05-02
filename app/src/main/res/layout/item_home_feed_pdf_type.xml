@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp"
+    card_view:cardBackgroundColor="#f8f8f8"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/feed_home_pdf_type_colored_block"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bluish_block_layer"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/feed_home_pdf_type_title_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/feed_home_pdf_type_format_tv"
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:background="@drawable/option_rect"
+                android:gravity="top"
+                android:visibility="invisible"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/feed_home_pdf_type_image"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pdf_icon"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/feed_home_pdf_type_text_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="Random Text"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

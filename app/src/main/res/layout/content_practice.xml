@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.mistu.android.exam.activity.PracticeActivity"
+    tools:showIn="@layout/activity_practice">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="4dp"
+            card_view:cardBackgroundColor="@color/screenBackground"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/TestTypeTextView"
+                    android:background="@drawable/orange_block_layer"
+                    android:text="@string/random_test"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    style="@style/InstructionTextView"
+                    android:text="@string/instant_quiz_instruction"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/practice_instant_quiz_start_tv"
+                    style="@style/TestTypeTextView"
+                    android:text="@string/start"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/background_rectangle"
+                    android:textColor="@color/colorAccent"
+                    android:layout_margin="8dp"
+                    />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="4dp"
+            card_view:cardBackgroundColor="@color/screenBackground"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/TestTypeTextView"
+                    android:background="@drawable/bluish_block_layer"
+                    android:text="@string/custom_test"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    style="@style/InstructionTextView"
+                    android:text="@string/custom_quiz_instruction"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/practice_instant_quiz_select_chapter_tv"
+                    style="@style/TestTypeTextView"
+                    android:text="@string/select_chapter"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:textStyle="normal"
+                    android:background="@drawable/bluish_unfilled_rectangle"
+                    android:textColor="#42A5F5"
+                    android:layout_margin="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/practice_instant_quiz_num_questions_tv"
+                    style="@style/TestTypeTextView"
+                    android:text="@string/select_num_of_questions"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:textStyle="normal"
+                    android:background="@drawable/bluish_unfilled_rectangle"
+                    android:textColor="#42A5F5"
+                    android:layout_margin="8dp"
+                    />
+                <TextView
+                    android:id="@+id/practice_custom_quiz_start_tv"
+                    style="@style/TestTypeTextView"
+                    android:text="@string/start"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bluish_unfilled_rectangle"
+                    android:textColor="#42A5F5"
+                    android:layout_margin="8dp"
+                    />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

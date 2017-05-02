@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#128c7e</color>
-    <color name="colorPrimaryDark">#075e54</color>
+    <color name="colorPrimary">#BDBDBD</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#25d366</color>
+
+    <color name="screenBackground">#fafafa</color>
+    <color name="screenBackgroundDark">#bfbfbf</color>
+    <color name="lightTextColor">#fafafa</color>
 
     <color name="wACheckMarkBlue">#34b7f1</color>
     <color name="wAChatBackground">#ece5dd</color>
 
-    <color name="colorAccent">#25d366</color>
+
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="summary_card_layer">#5C6BC0</color>
+    <color name="loginBackground">#BA68C8</color>
 
     <color name="card_bg1">#7fcff6</color>
     <color name="card_bg2">#b26a72</color>
@@ -22,4 +28,6 @@
     <color name="card_bg9">#bfd5da</color>
     <color name="card_bg10">#ad040b</color>
     <color name="question_back">#BBDEFB</color>
+    <color name="orange">#FF9800</color>
+    <color name="teal_light">#B2DFDB</color>
 </resources>

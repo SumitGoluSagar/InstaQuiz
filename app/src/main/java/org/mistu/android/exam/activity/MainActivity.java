@@ -24,35 +24,14 @@ import org.mistu.android.exam.fragment.TestTypeDialogFragment;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity
-        implements TestTypeDialogFragment.OnTestTypeFragmentInteractionListener,
-        SummaryListFragment.OnSummaryListFragmentInteractionListener {
+        implements SummaryListFragment.OnSummaryListFragmentInteractionListener {
 
-    private List<Problem> problemList;
-    private List<String> answerList;
-
-    private String urlToHit;
-    private String quizType;
-    private FloatingActionButton fab;
-    private TestTypeDialogFragment dialogFragment;
     private SummaryListFragment summaryFragment;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        if(savedInstanceState != null){
-            if (urlToHit == null){
-                Log.d("URL_TO_HIT ", "IS NULL");
-            }else {
-                Log.d("URL_TO_HIT_SAVED ", urlToHit);
-            }
-            //Log.d("FAB_PROPERTY ", Integer.toString(fab.getSize()));
-            return;
-        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -61,14 +40,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void initVariables() {
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        urlToHit = AppConstants.INSTANT_QUIZ_URL;
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setTestTypeDialogFragment();
-            }
-        });
     }
 
     private void setSummaryListFragment(){
@@ -78,7 +49,7 @@ public class MainActivity extends AppCompatActivity
         ft.commit();
     }
 
-    private void setTestTypeDialogFragment() {
+   /* private void setTestTypeDialogFragment() {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         Fragment prev = getSupportFragmentManager().findFragmentByTag("dialog");
         if (prev != null) {
@@ -88,7 +59,7 @@ public class MainActivity extends AppCompatActivity
 
         dialogFragment = TestTypeDialogFragment.newInstance();
         dialogFragment.show(ft, "dialog");
-    }
+    }*/
 
     @Override
     protected void onResume() {
@@ -118,7 +89,7 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
+    /*@Override
     public void onTestTypeFragmentInteraction(String type) {
         dialogFragment.dismiss();
         Intent intent = new Intent(this, QuizActivity.class);
@@ -137,7 +108,7 @@ public class MainActivity extends AppCompatActivity
         intent.putExtra(AppConstants.URL_TO_HIT, urlToHit);
         intent.putExtra(AppConstants.TEST_TYPE, quizType);
         startActivity(intent);
-    }
+    }*/
 
     @Override
     public void onSummaryListFragmentInteraction(long id, String responseAnswerJsonString, String timeTaken) {
@@ -155,5 +126,16 @@ public class MainActivity extends AppCompatActivity
         if (listSize != 0) {
             ((LinearLayout) findViewById(R.id.activity_main_init_layout)).setVisibility(View.GONE);
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        Fragment prev = getSupportFragmentManager().findFragmentByTag("summaryFrag");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        summaryFragment = null;
+        super.onStop();
     }
 }

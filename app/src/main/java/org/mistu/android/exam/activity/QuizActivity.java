@@ -153,6 +153,7 @@ public class QuizActivity extends AppCompatActivity
         adapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
         isStopWatchRunning = true;
         startStopWatch();
         for(Problem problem : problemList) {

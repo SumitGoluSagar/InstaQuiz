@@ -25,5 +25,23 @@
     <string name="init_text">"Welcome to InstaQuiz.\n\n"
         "Click on add icon to start a new quiz!"
     </string>
+    <string name="title_activity_home">Home</string>
+    <string name="start">Start</string>
+    <string name="select_chapter">Select Chapter</string>
+    <string name="select_num_of_questions">Number of Questions</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_logout">Logout</string>
+    <string name="app_tag_line">The best learning app for students.</string>
+    <string name="title_activity_practice">Practice</string>
+    <string name="instant_quiz_instruction">"1. This quiz consists of 5 questions.\n2. Swipe right to go to the next question.\n3. Swipe left to go to the previous question.\n4. Click submit to end the quiz."</string>
+    <string name="custom_quiz_instruction">"1. Select chapter for quiz.\n2. Select number of questions.\n3. Swipe right to go to the next question.\n4. Swipe left to go to the previous question.\n5. Click submit to end the quiz. "</string>
+    <string name="title_activity_batch">Batches</string>
 
+    <string name="from">From</string>
+
+    <string name="to">To</string>
+    <string name="submit">Submit</string>
+    <string name="create">Create</string>
+    <string name="edit">Edit</string>
 </resources>

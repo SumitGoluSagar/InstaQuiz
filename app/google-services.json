@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1021650066401",
+    "firebase_url": "https://instaquiz-8ace5.firebaseio.com",
+    "project_id": "instaquiz-8ace5",
+    "storage_bucket": "instaquiz-8ace5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021650066401:android:fe7c715cef6f2aee",
+        "android_client_info": {
+          "package_name": "org.mistu.android.exam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021650066401-4vct27puab4slektg3ihk91lk6g278u2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.mistu.android.exam",
+            "certificate_hash": "20fbc37315193cab9e2396739721716f06860cd8"
+          }
+        },
+        {
+          "client_id": "1021650066401-h276aocun3sk8laue0pq6t2vb4kp2nme.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbu0r3vOVW8QqQPe8EtKwxpHDNTIHXHyE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021650066401-h276aocun3sk8laue0pq6t2vb4kp2nme.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
